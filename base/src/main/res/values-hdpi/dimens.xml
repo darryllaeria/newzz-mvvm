@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ViewGroup Margin, padding -->
+    <dimen name="view_margin_horizontal">45dp</dimen>
+    <dimen name="view_margin_vertical">36dp</dimen>
+
+    <!-- TextView, Button -->
+    <dimen name="text_header_one">42sp</dimen>
+    <dimen name="text_description">22.5sp</dimen>
+    <dimen name="text_button_only">25.5sp</dimen>
+    <dimen name="text_button_size">24sp</dimen>
+    <dimen name="text_button_padding">18dp</dimen>
+
+</resources>

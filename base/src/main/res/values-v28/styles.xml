@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextViewHeading">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/text_size_l7</item>
+        <item name="android:lineHeight">@dimen/_34ssp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/black_heading</item>
+    </style>
+</resources>

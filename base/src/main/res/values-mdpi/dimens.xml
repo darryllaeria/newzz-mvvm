@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ViewGroup Margin, padding -->
+    <dimen name="view_margin_horizontal">30dp</dimen>
+    <dimen name="view_margin_vertical">24dp</dimen>
+    <dimen name="view_margin_signup">32dp</dimen>
+
+    <!-- TextView, Button -->
+    <dimen name="text_input">20sp</dimen>
+    <dimen name="text_header_one">28sp</dimen>
+    <dimen name="text_description">15sp</dimen>
+    <dimen name="text_button_only">17sp</dimen>
+    <dimen name="text_button_size">16sp</dimen>
+    <dimen name="text_button_padding">6dp</dimen>
+
+
+    <dimen name="button_radius">24dp</dimen>
+
+</resources>

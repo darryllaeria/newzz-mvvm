@@ -1,0 +1,22 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->v
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <!--Splash activity theme-->
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:selectable">false</item>
+        <item name="actionBarStyle">@style/Theme.AppCompat.Light.NoActionBar</item>
+        <item name="android:statusBarColor">@color/txt_white</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+    </style>
+</resources>

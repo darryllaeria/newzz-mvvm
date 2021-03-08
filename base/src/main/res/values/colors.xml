@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--primary colors-->
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorPrimary">#267cd2</color>
+    <color name="colorPrimaryDark">#1866cc</color>
+
+    <!-- Buttons -->
+    <color name="button_gradient_start">#73b0f4</color>
+    <color name="button_gradient_end">#2e70e0</color>
+
+    <!-- Background -->
+    <color name="bg_app_disable">#ebcccccc</color>
+    <color name="bg_theme">#FFFFFF</color>
+    <color name="black_opaque">#80000000</color>
+
+    <!--support colors-->
+    <color name="black">#000000</color>
+    <color name="black_count">#999999</color>
+    <color name="black_heading">#333333</color>
+    <color name="black_profile_overlay">#44000000</color>
+    <color name="black_sub_title">#666666</color>
+    <color name="black_title">#222222</color>
+    <color name="blue_link">#358cff</color>
+    <color name="blue_text">#91c1ff</color>
+    <color name="chat_info_header">#ffe9bf</color>
+    <color name="gray">#bababa</color>
+    <color name="gray_chat_menu_divider">#ececec</color>
+    <color name="gray_date_title">#8a8a8a</color>
+    <color name="gray_divider">#f2f2f2</color>
+    <color name="gray_heading">#888888</color>
+    <color name="gray_inbox_date">#acacac</color>
+    <color name="gray_light">#f2f2f2</color>
+    <color name="gray_placeholder">#8e8e8e</color>
+    <color name="gray_section_header">#888888</color>
+    <color name="gray_time_title">#acacac</color>
+    <color name="gray_title">#dddddd</color>
+    <color name="gray_unselected">#cccccc</color>
+    <color name="green">#7aaf00</color>
+    <color name="light_blue">#eaf3ff</color>
+    <color name="light_gray_value">#888888</color>
+    <color name="lighter_gray">#edeeef</color>
+    <color name="pin_back">#999999</color>
+    <color name="red">#e74c3c</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_grey">#80F2F2F2</color>
+    <color name="unpin_back">#00bea4</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="txt_white_lighter">#80ffffff</color>
+    <color name="txt_white">#ffffff</color>
+    <color name="txt_error">#ff443a</color>
+    <color name="chat_bg">#e3e9f0</color>
+    <color name="green_positive">#34C759</color>
+</resources>

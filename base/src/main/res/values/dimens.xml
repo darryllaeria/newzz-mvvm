@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Project Standard Text Sizes never change-->
+    <dimen name="text_size_l0">@dimen/_10ssp</dimen>
+    <dimen name="text_size_l1">@dimen/_12ssp</dimen>
+    <dimen name="text_size_l2">@dimen/_14ssp</dimen>
+    <dimen name="text_size_l3">@dimen/_16ssp</dimen>
+    <dimen name="text_size_l4">@dimen/_18ssp</dimen>
+    <dimen name="text_size_l5">@dimen/_20ssp</dimen>
+    <dimen name="text_size_l6">@dimen/_22ssp</dimen>
+    <dimen name="text_size_l7">@dimen/_34ssp</dimen>
+    <dimen name="text_size_l8">@dimen/_32ssp</dimen>
+
+    <!--basic dimes-->
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="match_constraints">0dp</dimen>
+    <dimen name="common_margin">@dimen/_8sdp</dimen>
+    <dimen name="medium_margin">@dimen/_16sdp</dimen>
+    <dimen name="large_margin">@dimen/_24sdp</dimen>
+    <dimen name="extra_large_margin">@dimen/_32sdp</dimen>
+    <dimen name="small_clickable_padding">@dimen/_2sdp</dimen>
+    <dimen name="divider_height">@dimen/_1sdp</dimen>
+
+    <!--specific spacing dimensions-->
+    <dimen name="screen_padding">@dimen/_16sdp</dimen>
+    <dimen name="dialog_padding">@dimen/_16sdp</dimen>
+
+    <!--other dimensions-->
+    <dimen name="app_button_corner_radius">@dimen/_16sdp</dimen>
+    <dimen name="app_dialog_corner_radius">@dimen/_8sdp</dimen>
+    <dimen name="profile_image_size">@dimen/_80sdp</dimen>
+    <dimen name="chat_avatar_size">@dimen/_30sdp</dimen>
+    <dimen name="inbox_image_size">@dimen/_60sdp</dimen>
+    <dimen name="chat_item_padding">@dimen/_60sdp</dimen>
+    <dimen name="elevation">@dimen/_2sdp</dimen>
+    <dimen name="gallery_item_size">@dimen/_150sdp</dimen>
+    <dimen name="color_picker_size">@dimen/_25sdp</dimen>
+    <dimen name="civ_border">@dimen/_5sdp</dimen>
+    <dimen name="compose_button_padding">@dimen/_50sdp</dimen>
+</resources>
