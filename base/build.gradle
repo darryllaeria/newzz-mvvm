@@ -76,10 +76,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.bouncycastle:bcpkix-jdk15on:1.56"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-
-    implementation library.lottie
 
     api androidx.appcompat
     api androidx.constraint
@@ -97,9 +94,6 @@ dependencies {
     api androidx.paging
     kapt androidx.life_compiler
 
-    api library.photo_editor
-    api library.photo_view
-
     // Retrofit
     api library.converter
     api library.interceptor
@@ -111,37 +105,15 @@ dependencies {
     api library.retrofit
     kapt library.moshi_codegen
 
-    // MQTT
-    api library.mqtt_client
-    api library.mqtt_service
-
-    // Emoji
-    api androidx.emoji
-    api androidx.emoji_compat
-    api androidx.emoji_bundle
-
     // Kotlin & Coroutines
     api library.coroutine_adapter
     api library.coroutine_android
     api library.coroutine_core
     api library.kot_lib
 
-    // Firebase
-    api library.fb_analy
-    api library.fb_auth
-    api library.fb_config
-    api library.fb_crash
-    api library.fb_dynamic
-    api library.fb_mess
-    api library.fb_storage
-
     // Koin
     api library.koin_core
     api library.koin_vm
-
-    // Glide
-    api library.glide
-    kapt library.glide_compiler
 
     // Spanner
     api library.spanner
@@ -152,22 +124,7 @@ dependencies {
     // Merlin
     api library.merlin
 
-    // Realm
-    api library.realm
-
-    // Swiper
-    api androidx.swiper
-
-    // Cameraman
-    api library.fotoapp
-
-    // Matisse
-    api library.matisse
-
     api library.dexter
-
-    api androidx.workmanager
-
 
     testImplementation 'junit:junit:4.13.2' // Required -- JUnit 4 framework
     testImplementation 'androidx.test:core:1.3.0' // Optional -- Robolectric environment

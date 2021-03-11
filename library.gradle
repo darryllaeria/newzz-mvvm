@@ -39,7 +39,7 @@ ext {
     ktx_core = "1.1.0"
     lifecycleViewmodel = "2.2.0-rc03"
     lifeCycleVersion = "1.0.0-alpha9"
-    lottie = "3.3.0"
+//    lottie = "3.3.0"
     material = "1.1.0-alpha09"
     matisseVersion = "0.5.3-beta3"
     merlin = "1.2.0"
@@ -58,11 +58,11 @@ ext {
     retrofitVersion = "2.6.0"
     seekbar = "2.1.2"
     spanner = "1.0.0"
-    stetho = "1.5.1"
+//    stetho = "1.5.1"
     swiper = "1.0.0"
     uilVersion = "1.9.5"
-    workmanager = "2.3.1"
-    zxing = "1.9.13"
+//    workmanager = "2.3.1"
+//    zxing = "1.9.13"
 
     androidx = [
         appcompat: "androidx.appcompat:appcompat:$supportLibVersion",
@@ -83,7 +83,7 @@ ext {
         nav_ui: "androidx.navigation:navigation-ui-ktx:$navigationEditor",
         recycler: "androidx.recyclerview:recyclerview:$recyclerView",
         swiper: "androidx.swiperefreshlayout:swiperefreshlayout:$swiper",
-        workmanager: "androidx.work:work-runtime-ktx:$workmanager",
+//        workmanager: "androidx.work:work-runtime-ktx:$workmanager",
     ]
 
     library = [
@@ -112,7 +112,7 @@ ext {
         koin_vm: "org.koin:koin-androidx-viewmodel:$koin",
         kot_lib: "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
         link_preview: "com.github.VRGsoftUA:Kotlin-Link-Parser:1.0.0",
-        lottie: "com.airbnb.android:lottie:$lottie",
+//        lottie: "com.airbnb.android:lottie:$lottie",
         material: "com.google.android.material:material:$material",
         material_ripple: "com.balysv:material-ripple:1.0.2",
         matisse: "com.zhihu.android:matisse:$matisseVersion",
@@ -133,10 +133,10 @@ ext {
         seekbar: "com.github.warkiz.widget:indicatorseekbar:$seekbar",
         slide_layout: "com.daimajia.swipelayout:library:1.2.0@aar",
         spanner: "com.github.neworld:spanner:$spanner",
-        stetho: "com.facebook.stetho:stetho:$stetho",
-        stetho_http: "com.facebook.stetho:stetho-okhttp3:$stetho",
-        stetho_realm: "com.uphyca:stetho_realm:2.1.0",
-        zxing: "me.dm7.barcodescanner:zxing:$zxing",
+//        stetho: "com.facebook.stetho:stetho:$stetho",
+//        stetho_http: "com.facebook.stetho:stetho-okhttp3:$stetho",
+//        stetho_realm: "com.uphyca:stetho_realm:2.1.0",
+//        zxing: "me.dm7.barcodescanner:zxing:$zxing",
     ]
 
     testing = [

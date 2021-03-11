@@ -3,8 +3,6 @@ package com.example.newzz
 import android.app.Application
 import android.content.Context
 import android.content.res.Configuration
-import androidx.emoji.bundled.BundledEmojiCompatConfig
-import androidx.emoji.text.EmojiCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
@@ -58,7 +56,6 @@ class Application : Application(), LifecycleObserver {
         super.onCreate()
         applyLocale()
         initDependencies()
-        initEmoji()
         setupRealm()
         ConfigHelper.applyTheme(PrefsManager.getInstance(this).getBool("mode", false))
         ProcessLifecycleOwner.get().lifecycle.addObserver(this)
@@ -71,12 +68,6 @@ class Application : Application(), LifecycleObserver {
             androidContext(this@Application)
             modules(getModule())
         }
-    }
-
-    private fun initEmoji() {
-        val config = BundledEmojiCompatConfig(this)
-            .setReplaceAll(true)
-        EmojiCompat.init(config)
     }
 
     private fun setupRealm() {
