@@ -16,9 +16,7 @@ import com.example.newzz.base.R
 import com.example.newzz.base.extension.applyLocale
 import com.tapadoo.alerter.Alerter
 
-abstract class BaseFragment : Fragment() {
-
-    abstract var layoutId: Int
+abstract class BaseFragment(var layoutId: Int = 0) : Fragment() {
 
     // MARK: - Override Functions
     override fun onAttach(context: Context) {
@@ -46,7 +44,6 @@ abstract class BaseFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        initView()
         initEvent()
         initLogic()
     }
@@ -147,13 +144,6 @@ abstract class BaseFragment : Fragment() {
      * @method Initialize for toolbar
      */
     open fun initToolbar() {}
-
-    /**
-     * @method Init all views for fragment
-     */
-    open fun initView() {
-//        sharedElementEnterTransition = TransitionInflater.from(context).inflateTransition(android.R.transition.move)
-    }
 
     /**
      * @method Unsubscribe all observers from view model's live data attributes
