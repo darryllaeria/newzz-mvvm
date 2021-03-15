@@ -1,2 +1,2 @@
-include ':app', ':auth', ':base'
+include ':app', ':home', ':base'
 rootProject.name='newzz'

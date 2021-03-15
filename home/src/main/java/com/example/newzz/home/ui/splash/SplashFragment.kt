@@ -1,5 +1,5 @@
-package com.example.newzz.authentication.ui.splash
-import com.example.newzz.authentication.R
+package com.example.newzz.home.ui.splash
+import com.example.newzz.home.R
 import com.example.newzz.base.base_component.BaseFragment
 import org.koin.androidx.viewmodel.ext.android.viewModel
 

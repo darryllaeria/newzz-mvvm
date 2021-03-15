@@ -1,4 +1,4 @@
-package com.example.newzz.authentication.ui.splash
+package com.example.newzz.home.ui.splash
 
 import androidx.lifecycle.MutableLiveData
 import com.example.newzz.base.base_component.BaseViewModel
