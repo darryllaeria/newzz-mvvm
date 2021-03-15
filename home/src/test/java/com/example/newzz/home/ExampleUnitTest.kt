@@ -1,4 +1,4 @@
-package com.example.newzz.authentication
+package com.example.newzz.home
 
 import org.junit.Test
 import org.junit.Assert.*
