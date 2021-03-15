@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="auth">Auth</string>
+    <string name="search_keyword">Enter a keyword</string>
 </resources>

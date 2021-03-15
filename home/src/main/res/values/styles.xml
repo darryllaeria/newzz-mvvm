@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="HomeInput">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/text_size_l4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black_title</item>
+        <item name="android:selectable">true</item>
+        <item name="android:maxLength">50</item>
+        <item name="android:textColorHint">@color/txt_white</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textCursorDrawable">@color/black</item>
+    </style>
+
     <declare-styleable name="MarkedText">
         <attr name="mt_description" format="string"/>
     </declare-styleable>
