@@ -49,25 +49,25 @@ android {
 
     productFlavors {
         localTest {
-            buildConfigField 'String', 'APP_MAIL', '""'
-            buildConfigField 'String', 'BASE_URL', '""'
             buildConfigField 'String', 'APP_NAME', '"newzz"'
+            buildConfigField 'String', 'BASE_URL', '""'
+            buildConfigField 'String', 'NEWS_API_KEY', '"dbf1909199b5492db8953081776fbe1a"'
             buildConfigField 'String', 'VERSION_REALM_SCHEMA', '"0"'
             dimension "default"
         }
 
         dev {
-            buildConfigField 'String', 'APP_MAIL', '""'
-            buildConfigField 'String', 'BASE_URL', '""'
             buildConfigField 'String', 'APP_NAME', '"newzz"'
+            buildConfigField 'String', 'BASE_URL', '""'
+            buildConfigField 'String', 'NEWS_API_KEY', '"dbf1909199b5492db8953081776fbe1a"'
             buildConfigField 'String', 'VERSION_REALM_SCHEMA', '"0"'
             dimension "default"
         }
 
         production {
-            buildConfigField 'String', 'APP_MAIL', '""'
-            buildConfigField 'String', 'BASE_URL', '""'
             buildConfigField 'String', 'APP_NAME', '"newzz"'
+            buildConfigField 'String', 'BASE_URL', '""'
+            buildConfigField 'String', 'NEWS_API_KEY', '"dbf1909199b5492db8953081776fbe1a"'
             buildConfigField 'String', 'VERSION_REALM_SCHEMA', '"0"'
             dimension "default"
         }
