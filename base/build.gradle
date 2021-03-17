@@ -112,22 +112,15 @@ dependencies {
     api library.coroutine_adapter
     api library.coroutine_android
     api library.coroutine_core
-    api library.kot_lib
 
-    // Koin
+    api library.kot_lib
     api library.koin_core
     api library.koin_vm
-
-    // Spanner
     api library.spanner
-
-    // Alerter
     api library.alerter
-
-    // Merlin
     api library.merlin
-
     api library.dexter
+    api library.leakcanary
 
     testImplementation 'junit:junit:4.13.2' // Required -- JUnit 4 framework
     testImplementation 'androidx.test:core:1.3.0' // Optional -- Robolectric environment
