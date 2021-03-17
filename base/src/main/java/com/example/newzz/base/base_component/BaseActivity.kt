@@ -3,7 +3,6 @@ package com.example.newzz.base.base_component
 import android.content.Context
 import android.content.res.Configuration
 import android.os.Bundle
-import android.os.Messenger
 import androidx.appcompat.app.AppCompatActivity
 import com.example.newzz.base.extension.applyLocale
 import com.example.newzz.base.extension.hasInternetConnection
@@ -77,8 +76,4 @@ abstract class BaseActivity : AppCompatActivity() {
     open fun handleConnectionBack() {
         Alerter.clearCurrent(this)
     }
-
-    abstract fun getServerMessenger(): Messenger?
-
-    abstract fun getClientMessenger(): Messenger?
 }

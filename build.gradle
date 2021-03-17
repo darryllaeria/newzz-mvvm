@@ -15,7 +15,6 @@ buildscript {
         classpath 'android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0'
         classpath 'com.google.gms:google-services:4.3.5'
         classpath "com.google.firebase:firebase-crashlytics-gradle:$crashlytics_version"
-        classpath 'io.realm:realm-gradle-plugin:7.0.0-beta-SNAPSHOT'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -27,8 +26,6 @@ allprojects {
         jcenter()
         maven { url "https://jitpack.io" }
         maven { url "https://dl.bintray.com/rtpldeveloper/dochelper" }
-        maven { url "https://repo.eclipse.org/content/repositories/paho-releases/" }
-        maven { url 'https://github.com/uPhyca/stetho-realm/raw/master/maven-repo' }
         maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
         maven { url "http://oss.jfrog.org/artifactory/oss-snapshot-local" }
     }

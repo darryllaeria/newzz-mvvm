@@ -1,7 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
-//apply plugin: 'realm-android'
 
 android {
     buildToolsVersion rootProject.ext.buildToolsVersion
@@ -44,10 +43,6 @@ android {
         }
     }
 
-//    realm {
-//        kotlinExtensionsEnabled = true
-//    }
-
     flavorDimensions "default"
 
     productFlavors {
@@ -55,7 +50,7 @@ android {
             buildConfigField 'String', 'APP_NAME', '"newzz"'
             buildConfigField 'String', 'BASE_URL', '"https://newsapi.org/v2"'
             buildConfigField 'String', 'NEWS_API_KEY', '"dbf1909199b5492db8953081776fbe1a"'
-            buildConfigField 'String', 'VERSION_REALM_SCHEMA', '"0"'
+            buildConfigField 'String', 'VERSION_DB_SCHEMA', '"0"'
             dimension "default"
         }
 
@@ -63,7 +58,7 @@ android {
             buildConfigField 'String', 'APP_NAME', '"newzz"'
             buildConfigField 'String', 'BASE_URL', '"https://newsapi.org/v2"'
             buildConfigField 'String', 'NEWS_API_KEY', '"dbf1909199b5492db8953081776fbe1a"'
-            buildConfigField 'String', 'VERSION_REALM_SCHEMA', '"0"'
+            buildConfigField 'String', 'VERSION_DB_SCHEMA', '"0"'
             dimension "default"
         }
 
@@ -71,7 +66,7 @@ android {
             buildConfigField 'String', 'APP_NAME', '"newzz"'
             buildConfigField 'String', 'BASE_URL', '"https://newsapi.org/v2/everything"'
             buildConfigField 'String', 'NEWS_API_KEY', '"dbf1909199b5492db8953081776fbe1a"'
-            buildConfigField 'String', 'VERSION_REALM_SCHEMA', '"0"'
+            buildConfigField 'String', 'VERSION_DB_SCHEMA', '"0"'
             dimension "default"
         }
     }
