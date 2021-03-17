@@ -13,7 +13,6 @@ import android.telephony.TelephonyManager
 import android.util.DisplayMetrics
 import androidx.core.app.ActivityCompat
 import com.example.newzz.base.Constants
-import com.example.newzz.base.data.model.ContactModel
 import com.example.newzz.base.manager.PrefsManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking
@@ -66,47 +65,6 @@ fun Context.dpToPx(dp: Float): Int {
 fun Context.pxToDp(px: Float): Float {
     val density = resources.displayMetrics.densityDpi.toFloat()
     return px / (density / DisplayMetrics.DENSITY_DEFAULT)
-}
-
-fun Context.getAllLocalContacts(): MutableList<ContactModel> {
-    val contentResolver = contentResolver
-    val contactCursor = contentResolver.query(ContactsContract.Contacts.CONTENT_URI, null, null, null, "${ContactsContract.Contacts.DISPLAY_NAME} ASC")
-    val localContacts = mutableListOf<ContactModel>()
-    if (contactCursor != null && contactCursor.count > 0) {
-        while (contactCursor.moveToNext()) {
-            val contact = ContactModel()
-            contact.local_name = contactCursor.getString(
-                contactCursor.getColumnIndex(
-                    ContactsContract.Contacts.DISPLAY_NAME
-                )
-            ) ?: ""
-
-            localContacts.add(contact)
-
-            if (contactCursor.getInt(contactCursor.getColumnIndex(ContactsContract.Contacts.HAS_PHONE_NUMBER)) > 0) {
-                val id = contactCursor.getString(contactCursor.getColumnIndex(ContactsContract.Contacts._ID)) ?: ""
-                val phoneNumberCursor = contentResolver.query(
-                    ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
-                    null,
-                    ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = ?",
-                    arrayOf(id),
-                    null
-                )
-                while (phoneNumberCursor?.moveToNext()!!) {
-                    val phoneNo = phoneNumberCursor.getString(
-                        phoneNumberCursor.getColumnIndex(
-                            ContactsContract.CommonDataKinds.Phone.NUMBER
-                        )
-                    ) ?: ""
-                    // Remove all characters that are not number
-                    contact.phone_number = phoneNo.trim()//phoneNo.replace("[^0-9]+".toRegex(), "")
-                }
-                phoneNumberCursor.close()
-            }
-        }
-    }
-    contactCursor?.close()
-    return localContacts
 }
 
 fun Context.getCountryCode(): String {
