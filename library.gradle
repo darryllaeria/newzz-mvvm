@@ -18,18 +18,7 @@ ext {
     countryPicker = "1.7.4"
     dexter = "4.2.0"
     dochelperVersion = "1.2.3"
-    emoji = "1.0.0"
     exitInterfaceVersion = "27.1.1"
-    firebaseAnalytics = "17.4.3"
-    firebaseAuthentication = "19.3.1"
-    firebaseCrashlytics = "17.0.1"
-    firebaseDynamic = "19.1.0"
-    firebaseMessaging = "20.2.0"
-    firebaseRemoteConfig = "19.1.4"
-    firebaseStorage = "19.1.1"
-    fotoapp = "2.7.0"
-    glide = "4.10.0"
-    glideVersion = "4.10.0"
     grid_layout = "1.0.0"
     httpInterceptor = "4.2.2"
     httpVersion = "4.2.2"
@@ -39,39 +28,28 @@ ext {
     ktx_core = "1.1.0"
     lifecycleViewmodel = "2.2.0-rc03"
     lifeCycleVersion = "1.0.0-alpha9"
-//    lottie = "3.3.0"
     material = "1.1.0-alpha09"
-    matisseVersion = "0.5.3-beta3"
     merlin = "1.2.0"
     moshi = "1.9.2"
     moshi_converter = "2.4.0"
-    mpChart = "v3.1.0"
-    mqtt = "1.1.0"
     navigationEditor = "2.1.0"
     okHttpVersion = "3.4.1"
     paging = "2.1.1"
-    photoeditor = "0.4.0"
-    photoview = "2.3.0"
     picassoVersion = "2.71828"
     realm_adaptor = "2.1.1"
     recyclerView = "1.1.0"
     retrofitVersion = "2.6.0"
     seekbar = "2.1.2"
     spanner = "1.0.0"
-//    stetho = "1.5.1"
     swiper = "1.0.0"
     uilVersion = "1.9.5"
-//    workmanager = "2.3.1"
-//    zxing = "1.9.13"
+    leak_canary = "2.6"
 
     androidx = [
         appcompat: "androidx.appcompat:appcompat:$supportLibVersion",
         card_view: "androidx.cardview:cardview:$card_view",
         constraint: "androidx.constraintlayout:constraintlayout:$constraint_layout",
         core: "androidx.core:core-ktx:$ktx_core",
-        emoji: "androidx.emoji:emoji:$emoji",
-        emoji_compat: "androidx.emoji:emoji-appcompat:$emoji",
-        emoji_bundle: "androidx.emoji:emoji-bundled:$emoji",
         grid: "androidx.gridlayout:gridlayout:$grid_layout",
         legacy: "androidx.legacy:legacy-support-v4:1.0.0",
         life_compiler: "androidx.lifecycle:lifecycle-compiler:$arch",
@@ -83,7 +61,6 @@ ext {
         nav_ui: "androidx.navigation:navigation-ui-ktx:$navigationEditor",
         recycler: "androidx.recyclerview:recyclerview:$recyclerView",
         swiper: "androidx.swiperefreshlayout:swiperefreshlayout:$swiper",
-//        workmanager: "androidx.work:work-runtime-ktx:$workmanager",
     ]
 
     library = [
@@ -95,48 +72,27 @@ ext {
         coroutine_core: "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines",
         dexter: "com.karumi:dexter:$dexter",
         doc_helper: "com.ranosys.dochelper:dochelper:$dochelperVersion",
-        fb_analy: "com.google.firebase:firebase-analytics-ktx:$firebaseAnalytics",
-        fb_auth: "com.google.firebase:firebase-auth-ktx:$firebaseAuthentication",
-        fb_config: "com.google.firebase:firebase-config-ktx:$firebaseRemoteConfig",
-        fb_crash: "com.google.firebase:firebase-crashlytics:$firebaseCrashlytics",
-        fb_dynamic: "com.google.firebase:firebase-dynamic-links-ktx:$firebaseDynamic",
-        fb_mess: "com.google.firebase:firebase-messaging:$firebaseMessaging",
-        fb_storage: "com.google.firebase:firebase-storage-ktx:$firebaseStorage",
-        fotoapp: "io.fotoapparat:fotoapparat:$fotoapp",
-        jsoup: "org.jsoup:jsoup:1.11.3",
-        glide: "com.github.bumptech.glide:glide:$glide",
-        glide_compiler: "com.github.bumptech.glide:compiler:$glide",
         interceptor: "com.squareup.okhttp3:logging-interceptor:$httpInterceptor",
         keyboardheightprovider: "com.hold1:keyboardheightprovider:0.0.9",
         koin_core: "org.koin:koin-core:$koin",
         koin_vm: "org.koin:koin-androidx-viewmodel:$koin",
         kot_lib: "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
         link_preview: "com.github.VRGsoftUA:Kotlin-Link-Parser:1.0.0",
-//        lottie: "com.airbnb.android:lottie:$lottie",
         material: "com.google.android.material:material:$material",
         material_ripple: "com.balysv:material-ripple:1.0.2",
-        matisse: "com.zhihu.android:matisse:$matisseVersion",
         merlin: "com.novoda:merlin:$merlin",
         moshi: "com.squareup.moshi:moshi:$moshi",
         moshi_adapter: "com.squareup.moshi:moshi-adapters:$moshi",
         moshi_codegen: "com.squareup.moshi:moshi-kotlin-codegen:$moshi",
         moshi_converter: "com.squareup.retrofit2:converter-moshi:$moshi_converter",
         moshi_kotlin: "com.squareup.moshi:moshi-kotlin:$moshi",
-        mp_chart: "com.github.PhilJay:MPAndroidChart:$mpChart",
-        mqtt_client: "org.eclipse.paho:org.eclipse.paho.client.mqttv3:$mqtt",
-        mqtt_service: "org.eclipse.paho:org.eclipse.paho.android.service:$mqtt",
         okhttp: "com.squareup.okhttp3:okhttp:$httpVersion",
-        photo_editor: "ja.burhanrashid52:photoeditor:$photoeditor",
-        photo_view: "com.github.chrisbanes:PhotoView:$photoview",
         realm: "io.realm:android-adapters:$realm_adaptor",
         retrofit: "com.squareup.retrofit2:retrofit:$retrofitVersion",
         seekbar: "com.github.warkiz.widget:indicatorseekbar:$seekbar",
         slide_layout: "com.daimajia.swipelayout:library:1.2.0@aar",
         spanner: "com.github.neworld:spanner:$spanner",
-//        stetho: "com.facebook.stetho:stetho:$stetho",
-//        stetho_http: "com.facebook.stetho:stetho-okhttp3:$stetho",
-//        stetho_realm: "com.uphyca:stetho_realm:2.1.0",
-//        zxing: "me.dm7.barcodescanner:zxing:$zxing",
+        leakcanary: "com.squareup.leakcanary:leakcanary-android:$leak_canary"
     ]
 
     testing = [
