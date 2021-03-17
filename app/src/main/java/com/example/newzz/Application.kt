@@ -13,6 +13,8 @@ import com.example.newzz.base.extension.applyLocale
 import com.example.newzz.base.manager.PrefsManager
 import com.example.newzz.base.utils.AppLog
 import com.example.newzz.base.utils.ConfigHelper
+import leakcanary.AppWatcher
+import leakcanary.ObjectWatcher
 //import io.realm.Realm
 import org.koin.android.ext.android.inject
 import org.koin.android.ext.koin.androidContext
@@ -59,6 +61,7 @@ class Application : Application(), LifecycleObserver {
 //        setupRealm()
         ConfigHelper.applyTheme(PrefsManager.getInstance(this).getBool("mode", false))
         ProcessLifecycleOwner.get().lifecycle.addObserver(this)
+        val objectWatcher: ObjectWatcher = AppWatcher.objectWatcher
     }
 
     // MARK: - Private Functions
