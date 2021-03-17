@@ -36,7 +36,6 @@ ext {
     okHttpVersion = "3.4.1"
     paging = "2.1.1"
     picassoVersion = "2.71828"
-    realm_adaptor = "2.1.1"
     recyclerView = "1.1.0"
     retrofitVersion = "2.6.0"
     seekbar = "2.1.2"
@@ -87,7 +86,6 @@ ext {
         moshi_converter: "com.squareup.retrofit2:converter-moshi:$moshi_converter",
         moshi_kotlin: "com.squareup.moshi:moshi-kotlin:$moshi",
         okhttp: "com.squareup.okhttp3:okhttp:$httpVersion",
-        realm: "io.realm:android-adapters:$realm_adaptor",
         retrofit: "com.squareup.retrofit2:retrofit:$retrofitVersion",
         seekbar: "com.github.warkiz.widget:indicatorseekbar:$seekbar",
         slide_layout: "com.daimajia.swipelayout:library:1.2.0@aar",

@@ -27,23 +27,8 @@ class HomeActivity: BaseActivity() {
     private var serverMessenger: Messenger? = null
 
     // MARK: - Override Functions
-    override fun getClientMessenger() = clientMessenger
-
-    override fun getServerMessenger() = serverMessenger
-
     override fun initView() {
         super.initView()
-        findNavController(R.id.hostContainer).apply {
-//            addOnDestinationChangedListener { _, destination, _ ->
-//                val ids = mutableListOf(R.id.fragment)
-//                botNavigator.visibility = if (destination.id in ids) {
-//                    View.VISIBLE
-//                } else {
-//                    View.GONE
-//                }
-//            }
-//            botNavigator.setupWithNavController(this)
-        }
     }
 
     override fun initLogic() {

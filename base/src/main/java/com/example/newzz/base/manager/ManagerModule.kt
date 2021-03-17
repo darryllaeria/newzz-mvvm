@@ -4,5 +4,4 @@ import org.koin.dsl.module
 
 val managerModule = module {
     single { PrefsManager(get()) }
-    single { TypingUsersManager() }
 }

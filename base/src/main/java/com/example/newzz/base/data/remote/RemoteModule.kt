@@ -19,7 +19,6 @@ import java.io.IOException
 import java.security.SecureRandom
 import java.security.cert.X509Certificate
 import java.util.concurrent.TimeUnit
-import javax.net.ssl.HostnameVerifier
 import javax.net.ssl.SSLContext
 import javax.net.ssl.X509TrustManager
 
@@ -30,7 +29,6 @@ val remoteModule = module {
     single(named("state")) { provideNetworkCheckInterceptor(get()) }
     single { provideUnsafeClient(get(), get(named("state")), get(named("auth"))) }
     single { provideRetrofit(get()) }
-    factory { provideDeviceService(get()) }
 }
 
 
@@ -104,8 +102,4 @@ fun provideRetrofit(client: OkHttpClient): Retrofit {
         .addConverterFactory(MoshiConverterFactory.create(moshi))
         .addCallAdapterFactory(CoroutineCallAdapterFactory())
         .build()
-}
-
-fun provideDeviceService(retrofit: Retrofit): DeviceService {
-    return retrofit.create(DeviceService::class.java)
 }

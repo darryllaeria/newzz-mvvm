@@ -7,15 +7,12 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.ProcessLifecycleOwner
-//import com.example.newzz.base.data.database.RealmDB
-import com.example.newzz.base.data.encryption.KeyStoreWrapper
 import com.example.newzz.base.extension.applyLocale
 import com.example.newzz.base.manager.PrefsManager
 import com.example.newzz.base.utils.AppLog
 import com.example.newzz.base.utils.ConfigHelper
 import leakcanary.AppWatcher
 import leakcanary.ObjectWatcher
-//import io.realm.Realm
 import org.koin.android.ext.android.inject
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -30,7 +27,6 @@ class Application : Application(), LifecycleObserver {
     }
 
     // MARK: - Private Constants
-    private val keyStore: KeyStoreWrapper by inject()
     private val prefMan: PrefsManager by inject()
 
     // MARK: - Application level lifecycle events
@@ -58,7 +54,6 @@ class Application : Application(), LifecycleObserver {
         super.onCreate()
         applyLocale()
         initDependencies()
-//        setupRealm()
         ConfigHelper.applyTheme(PrefsManager.getInstance(this).getBool("mode", false))
         ProcessLifecycleOwner.get().lifecycle.addObserver(this)
         val objectWatcher: ObjectWatcher = AppWatcher.objectWatcher
@@ -72,10 +67,4 @@ class Application : Application(), LifecycleObserver {
             modules(getModule())
         }
     }
-
-//    private fun setupRealm() {
-//        Realm.init(this)
-//        Realm.setDefaultConfiguration(RealmDB.getConfig(prefMan, keyStore))
-//        AppLog.d(TAG, "Realm path: " + Realm.getDefaultInstance().path)
-//    }
 }
