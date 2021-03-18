@@ -8,5 +8,6 @@ interface INewsRepository {
     /**
      *  @Detail Get news items
      */
-    suspend fun loadNews(q: String?, from: String?, sortBy: String?): Response<NewsItemModel>
+    suspend fun loadNews(q: String?, from: String?, sortBy: String?): Boolean
+//    suspend fun loadNews(q: String?, from: String?, sortBy: String?): Response<NewsItemModel>
 }
