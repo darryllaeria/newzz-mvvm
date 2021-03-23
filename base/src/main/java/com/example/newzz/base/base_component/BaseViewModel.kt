@@ -15,7 +15,7 @@ sealed class UIState {
     data class FAILED(val messageId: Int = DEFAULT_MESSAGE_ID, val tempData: Any? = null): UIState()
 }
 
-open class BaseViewModel(application: Application? = null): AndroidViewModel(application!!) {
+open class BaseViewModel(mApplication: Application? = null): AndroidViewModel(mApplication!!) {
     private val job = Job()
     private val ioContext = Dispatchers.IO + job
     private val uiContext = Dispatchers.Main + job

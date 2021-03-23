@@ -8,11 +8,9 @@ import com.squareup.moshi.Moshi
 @Entity(tableName = "news_articles")
 data class NewsArticlesModel(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
-
     @Json(name = NewsArticlesKey.source)
     @ColumnInfo(name = NewsArticlesKey.source)
     @TypeConverters(NewsSourceConverter::class) var source: NewsArticleSource? = null,
-
     @ColumnInfo(name = NewsArticlesKey.author) @Json(name = NewsArticlesKey.author) var author: String? = "",
     @ColumnInfo(name = NewsArticlesKey.title)  @Json(name = NewsArticlesKey.title) var title: String? = "",
     @ColumnInfo(name = NewsArticlesKey.description) @Json(name = NewsArticlesKey.description) var description: String? = "",

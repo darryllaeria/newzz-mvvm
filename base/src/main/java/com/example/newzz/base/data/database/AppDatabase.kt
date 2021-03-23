@@ -8,6 +8,7 @@ import androidx.room.TypeConverters
 import com.example.newzz.base.data.database.dao.NewsDao
 import com.example.newzz.base.data.model.NewsArticlesModel
 import com.example.newzz.base.data.model.NewsSourceConverter
+import kotlinx.coroutines.CoroutineScope
 
 @Database(entities = [
     NewsArticlesModel::class
@@ -18,21 +19,23 @@ abstract class AppDatabase : RoomDatabase() {
     abstract fun newsDao(): NewsDao
 
     companion object {
+        @Volatile
         private var INSTANCE: AppDatabase? = null
 
-        fun getRoom(context: Context): AppDatabase {
-            if (INSTANCE == null) {
-                INSTANCE = Room.databaseBuilder(context, AppDatabase::class.java, "app_db")
-                    .allowMainThreadQueries()
-                    .fallbackToDestructiveMigration()
-                    .build()
+        fun getInstance(context: Context, scope: CoroutineScope): AppDatabase {
+            val tempInstance = INSTANCE
+            if (tempInstance != null) {
+                return tempInstance
             }
-
-            return INSTANCE as AppDatabase
-        }
-
-        fun destroyRoom() {
-            INSTANCE = null
+            synchronized(this) {
+                val instance = Room.databaseBuilder(
+                    context.applicationContext,
+                    AppDatabase::class.java,
+                    "app_db")
+                    .build()
+                INSTANCE = instance
+                return instance
+            }
         }
     }
 }
