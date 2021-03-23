@@ -1,4 +1,20 @@
 package com.example.newzz.base.data.database.dao
 
-class NewsDao: BaseDao() {
+import androidx.room.Dao
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.Query
+import com.example.newzz.base.data.model.NewsArticlesModel
+
+@Dao
+interface NewsDao {
+
+    @Query("SELECT * FROM news_articles")
+    fun getAllNews(): List<NewsArticlesModel>
+
+    @Insert
+    fun insertNews(newsArticles: List<NewsArticlesModel>)
+
+    @Delete
+    fun deleteNews(newsId: NewsArticlesModel)
 }

@@ -1,6 +1,7 @@
 package com.example.newzz.base.base_component
 
-import androidx.lifecycle.ViewModel
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import com.example.newzz.base.Constants.DEFAULT_MESSAGE_ID
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -14,8 +15,7 @@ sealed class UIState {
     data class FAILED(val messageId: Int = DEFAULT_MESSAGE_ID, val tempData: Any? = null): UIState()
 }
 
-abstract class BaseViewModel: ViewModel() {
-
+open class BaseViewModel(application: Application? = null): AndroidViewModel(application!!) {
     private val job = Job()
     private val ioContext = Dispatchers.IO + job
     private val uiContext = Dispatchers.Main + job
