@@ -92,6 +92,11 @@ dependencies {
     api androidx.paging
     kapt androidx.life_compiler
 
+    // Room
+    api androidx.room_runtime
+    kapt androidx.room_kapt
+    api androidx.room_ktx
+
     // Retrofit
     api library.converter
     api library.interceptor
