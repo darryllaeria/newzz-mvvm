@@ -11,11 +11,11 @@ import com.example.newzz.base.data.model.NewsArticlesModel
 interface NewsDao {
 
     @Query("SELECT * FROM news_articles")
-    fun getAllNews(): LiveData<List<NewsArticlesModel>>
+    fun getAllArticles(): LiveData<List<NewsArticlesModel>>
 
     @Insert
-    fun insertNews(newsArticles: List<NewsArticlesModel>)
+    fun insertArticles(newsArticles: List<NewsArticlesModel>)
 
     @Delete
-    fun deleteNews(newsId: NewsArticlesModel)
+    fun deleteArticles(newsId: NewsArticlesModel)
 }

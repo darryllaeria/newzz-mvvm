@@ -21,10 +21,10 @@ class HomeViewModel(
         private val TAG: String = HomeViewModel::class.java.simpleName
     }
 
-    fun getAllNewsArticles() {
+    fun loadNewsArticles() {
         uiScope.launch {
             try {
-                allNews = appDatabase.newsDao().getAllNews() as MutableLiveData<List<NewsArticlesModel>>
+//                allNews = appDatabase.newsDao().getAllNews() as MutableLiveData<List<NewsArticlesModel>>
             } catch (e: Exception) {
                 AppLog.d(TAG, "Can't access AppDatabase")
             }
